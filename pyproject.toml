@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hammingdistance"
+description = "Calculate max Hamming distance among sequences"
+version = "0.0.1"
+authors = [
+  { name="Sybren Rinzema", email="s.l.rinzema@proton.me" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    'importlib-metadata; python_version<"3.12"',
+]
+
+[project.scripts]
+hammingdistance = "hammingdistance.cli:main"
