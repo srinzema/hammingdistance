@@ -19,10 +19,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Output max Hamming distance among sequences as integer"
     )
-    parser.add_argument("-s", "--sequences", nargs="+",
-                        help="List of sequences separated by spaces")
-    parser.add_argument("-f", "--file",
-                        help="Path to file with one sequence per line")
+    parser.add_argument(
+        "-s", "--sequences", nargs="+", help="List of sequences separated by spaces"
+    )
+    parser.add_argument("-f", "--file", help="Path to file with one sequence per line")
     args = parser.parse_args()
 
     if not args.sequences and not args.file:
