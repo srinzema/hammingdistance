@@ -42,8 +42,6 @@ print(max_dist)
 
 ## License
 
-MIT License
-
 ```text
 MIT License
 
