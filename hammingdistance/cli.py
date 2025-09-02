@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import argparse
-from .core import max_hamming_distance
+from hammingdistance.core import max_hamming_distance
 
 
 def main() -> None:
